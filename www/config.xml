@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "ir.smgroup.pano"
+        id        = "ir.smgroup.muze"
         version   = "1.33" >
 		
 		
-    <name>تست پانو</name>
-    <description>تست پانو</description>
+    <name>تست موزه</name>
+    <description>تست موزه</description>
     <author href="http://smgroup.ir" email="info@smgroup.ir">Sorush Mehr Rezvan</author>
     <!--
         If you do not want any permissions to be added to your app, add the
