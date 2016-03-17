@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>بازدید مجازی - کاری از شرکت سروش مهر رضوان</title>
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<style>
+		@-ms-viewport { width: device-width; }
+		@media only screen and (min-device-width: 800px) { html { overflow:hidden; } }
+		html { height:100%; }
+		body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+	</style>
+	<script src="js/jquery-1.11.3.min.js"></script>
+    <script src="phonegap.js"></script>
+	<script>
+		function init() {		
+			console.log('SMGROUP ::::::::::::::::::::::::::::::::::::    start init()');
+			document.addEventListener("deviceready", onDeviceReady, false);
+
+		}
+		function onDeviceReady() {
+			window.plugins.insomnia.keepAwake();
+			//window.plugins.insomnia.allowSleepAgain();
+		
+		}
+		$(document).ready(function() {
+			setTimeout(function(){
+
+				
+			}, 1000);
+		});
+	</script>
+</head>
+<body onload="init();">
+	<a href="vtour.html" style='text-align: center; font-family: tahoma; font-size: 15px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; vertical-align: middle; width: 100%; color: white; text-decoration: none; display: block; height: 48px;'>
+		ورود به تور مجازی
+	</a>
+</body>
+</html>
