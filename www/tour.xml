@@ -67,7 +67,7 @@
 
 
 
-<!-- video hotspot ================================= -->
+<!-- video hotspot ================================= --> 
 		<hotspot name="videospot"
 				 posterurl="%SWFPATH%/video/01.jpg" 
 				 url.flash="%SWFPATH%/plugins/videoplayer.swf" 
