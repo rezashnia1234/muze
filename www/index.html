@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>بازدید مجازی - کاری از شرکت سروش مهر رضوان</title>
+	<title>بسم الله الرحمن الرحیم</title>
 	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -25,6 +25,27 @@
 			//window.plugins.insomnia.allowSleepAgain();
 		
 		}
+		function download() {		
+			alert("0");
+			var fileName = "eula.1033.zip",
+				uriString = "http://198.50.231.240/hamid/eula.1033.zip";
+
+			// open target file for download
+			window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
+				alert("2");
+				fileSystem.root.getFile(fileName, { create: true }, function (targetFile) {
+
+					var onSuccess, onError, onProgress; // plugin callbacks to track operation execution status and progress
+
+					var downloader = new BackgroundTransfer.BackgroundDownloader();
+					// Create a new download operation.
+					var download = downloader.createDownload(uriString, targetFile);
+					// Start the download and persist the promise to be able to cancel the download.
+					app.downloadPromise = download.startAsync().then(onSuccess, onError, onProgress);
+				});
+			});
+			alert("9");
+		}
 		$(document).ready(function() {
 			setTimeout(function(){
 
@@ -37,5 +58,9 @@
 	<a href="vtour.html" style='text-align: center; font-family: tahoma; font-size: 15px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; vertical-align: middle; width: 100%; color: white; text-decoration: none; display: block; height: 48px;'>
 		ورود به تور مجازی
 	</a>
+	<span onclick="download();" style='text-align: center; font-family: tahoma; font-size: 15px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; vertical-align: middle; width: 100%; color: white; text-decoration: none; display: block; height: 48px;'>
+		<br/><br/><br/>
+		RUN
+	</span>
 </body>
 </html>
