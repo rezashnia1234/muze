@@ -2,10 +2,10 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "ir.smgroup.muze"
-        version   = "1.33" >
+        version   = "1.00" >
 		
 		
-    <name>تست موزه</name>
+    <name>تست</name>
     <description>تست موزه</description>
     <author href="http://smgroup.ir" email="info@smgroup.ir">Sorush Mehr Rezvan</author>
     <!--
@@ -69,6 +69,9 @@
     -->	
 	<!--Prevent the screen of the mobile device from falling asleep:-->
 	<plugin name="nl.x-services.plugins.insomnia" spec="4.0.1" source="pgb" />
+	<!--Background Download plugin for Apache Cordova-->
+	<plugin spec="https://github.com/sgrebnov/cordova-plugin-background-download.git" source="git" />
+
 	
 	<gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
     <gap:plugin name="com.phonegap.plugins.pushplugin" />
